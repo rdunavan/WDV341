@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    /
+    <style>
+        body {
+            background-image: linear-gradient(to right, #bfbfbf ,#999999);
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color:#262626;
+        }
+        form {
+            margin: 20px auto;
+            width: 320px;
+            color: #262626;
+        }
+       p{
+        display: block;
+            margin-bottom: 25px;
+            width: 100%;
+        }
+       
+        .button {
+  background-color:#262626;
+  border: none;
+  color: #bfbfbf;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:#999999;
+  color: white;
+}
+.textbox {
+	border: 3px groove #999999;
+	outline:0;
+	height:25px;
+	width: 275px;
+}
+.textbox1 {
+	border: 3px groove #999999;
+	outline:0;
+	height:250px;
+	width: 275px;
+}
+        </style>
+</head>
+<body>
+    <div class="topnav">
+        <a  href="#home">Home</a>
+        <a href="#news">News</a>
+        <a class="active"href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+    <h1>
+        Contact Form
+    </h1>
+    <form id="form1" name="form1" method="post" action="formHandler.php">
+      <p>
+        <input class="textbox"type="text" placeholder = "Contact Name"id="contactName" name="contactName">
+      </p>
+       <p>
+        <input class="textbox"type="text"placeholder = "Contact Email" id="ContactEmail" name="ContactEmail">
+       </p>
+     <p>
+        <select name="contactReason" placeholder = "Contact Email" id="contactReason">
+            <option class="textbox"value="happy">Happy with the Software</option>
+            <option class="textbox" value="conserns">Conserns with the software</option>
+            <option class="textbox" value="throwAway">Throw the software away</option></select>
+            <textarea class="textbox1" placeholder = "Comments"id=" Comments" name=" Comments" rows="5" cols="25"></textarea>
+     </p>
+      <p>
+        <input type="submit" name="button" class="button"id="button" value="Submit" />
+      </p>
+      
+         </form>
+      
+
+         
+</body>
+</html>
