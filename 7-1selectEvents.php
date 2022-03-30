@@ -1,9 +1,8 @@
 <?php
-include "connectPDO.php" 
-$sql = "SELECT event_name FROM wdv341_events "
+include "connectPDO.php" ;
+$sql = "SELECT event_name,	event_description FROM wdv341_events ";
 $stmt = $conn->prepare($sql);
 $stmt ->execute();
-$stmt ->setFetchMode(PDO::Fetch_ASSOC);
   
 
 ?>
