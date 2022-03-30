@@ -1,7 +1,7 @@
 <?php
 $event_id = 1;
-include "connectPDO.php" 
-$sql = "SELECT event_name,event_description FROM wdv341_events WHERE event_id = eventID "
+include "connectPDO.php" ;
+$sql = "SELECT event_name,event_description FROM wdv341_events WHERE event_id = eventID ";
 $stmt = $conn->prepare($sql);
 $stmt -> bindParam(':eventID', $event_id)
 $stmt ->execute();
